@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Poppins";
+    z-index: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+#left-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12em;
+    margin-right: 10em;
+    z-index: 1;
+}
+
+.main-texts {
+    inline-size: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#name-intro {
+    font-size: 4em;
+}
+
+#welcome {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#description {
+    font-size: 1em;
+    width: 80%;
+}
+
+#right-section {
+    width: 40%;
+    background-image: url(images/side-background.png);
+    z-index: 1;
+    background-size: cover;
+}
+
+#projects-slider {
+    top: 10%;  
+    right: 0%;
+    position: absolute;
+    width: 50%;
+    height: 80%; 
+    z-index: 3;
+    background-color: transparent;
+    overflow: auto;
+}
+
+#projects-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    width: 30em;
+    height: 16.875em;
+    border: solid white 0.2em;
+    margin-left: 10em;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease; 
+    text-align: center;
+}
+
+.content:hover {
+    transform: scale(1.1333); /* Scale up the element uniformly */
+    filter: none; /* Remove blur on hover */
+}
+
+.content:not(:hover) {
+    filter: blur(0.5px); /* Apply blur when not hovered */
+}
